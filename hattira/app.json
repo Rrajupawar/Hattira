@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Hattira",
+    "slug": "hattira",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#3D0A0A"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#3D0A0A",
+        "package": "com.hattira.app",
+        "softwareKeyboardLayoutMode": "resize"
+      },
+      "package": "com.hattira.app",
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-location",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#3D0A0A"
+        }
+      ],
+      "expo-image-picker"
+    ],
+    "owner": "raju_pawar",
+    "extra": {
+      "eas": {
+        "projectId": "c4661d0b-1541-4c91-aba7-6cbd9eabe4b7"
+      }
+    }
+  }
+}
